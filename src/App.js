@@ -1,24 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Slot from './Slot.Component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slot one={(Math.floor(Math.random()*3) + 1)} two={(Math.floor(Math.random()*3) + 1)} three={(Math.floor(Math.random()*3) + 1)}/>
+      <Slot one={(Math.floor(Math.random()*3) + 1)} two={(Math.floor(Math.random()*3) + 1)} three={(Math.floor(Math.random()*3) + 1)}/>
+      <Slot one={(Math.floor(Math.random()*3) + 1)} two={(Math.floor(Math.random()*3) + 1)} three={(Math.floor(Math.random()*3) + 1)}/>
     </div>
   );
 }
